@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hornet Live Brasil - Ferramentas para Streamers</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            width: 100%;
+        }
+
+        header {
+            text-align: center;
+            color: white;
+            margin-bottom: 50px;
+            animation: fadeInDown 0.8s ease;
+        }
+
+        h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .subtitle {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            animation: fadeInUp 0.8s ease 0.2s both;
+        }
+
+        .product-card {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+        }
+
+        .product-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+        }
+
+        .product-icon {
+            font-size: 4em;
+            margin-bottom: 20px;
+        }
+
+        .product-title {
+            font-size: 1.8em;
+            color: #333;
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+
+        .product-description {
+            color: #666;
+            margin-bottom: 25px;
+            line-height: 1.6;
+        }
+
+        .product-button {
+            display: inline-block;
+            padding: 12px 30px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+            transition: opacity 0.3s ease;
+        }
+
+        .product-button:hover {
+            opacity: 0.9;
+        }
+
+        footer {
+            text-align: center;
+            color: white;
+            margin-top: 50px;
+            opacity: 0.8;
+            animation: fadeIn 0.8s ease 0.4s both;
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2em;
+            }
+
+            .subtitle {
+                font-size: 1em;
+            }
+
+            .products-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🐝 Hornet Live Brasil</h1>
+            <p class="subtitle">Ferramentas profissionais para streamers brasileiros</p>
+        </header>
+
+        <div class="products-grid">
+            <div class="product-card" onclick="window.location.href='https://zurcleo.github.io/melzao/'">
+                <div class="product-icon">🍯</div>
+                <h2 class="product-title">Show do Melzão</h2>
+                <p class="product-description">
+                    Sistema interativo de perguntas e respostas para engajar sua audiência durante as lives
+                </p>
+                <a href="https://zurcleo.github.io/melzao/" class="product-button">Acessar →</a>
+            </div>
+
+            <div class="product-card" onclick="window.location.href='https://zurcleo.github.io/glossario-streamer/'">
+                <div class="product-icon">📚</div>
+                <h2 class="product-title">Glossário do Streamer</h2>
+                <p class="product-description">
+                    Dicionário completo com todos os termos e gírias do universo das transmissões ao vivo
+                </p>
+                <a href="https://zurcleo.github.io/glossario-streamer/" class="product-button">Acessar →</a>
+            </div>
+        </div>
+
+        <footer>
+            <p>© 2025 Hornet Live Brasil - Desenvolvido por Zurcleo</p>
+        </footer>
+    </div>
+</body>
+</html>
